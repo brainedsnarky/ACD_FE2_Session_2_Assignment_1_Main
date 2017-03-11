@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+
+           /*Create Object destructuring for user where user has: 
+           1. First Name, 2. Last Name, 3. Date of Birth, 
+           then assign this object in other object like: let obj = { first: 'Avnesh', last: 'Shakya' };
+           let {first: f, last: l} = obj; */
+
+           let details = { firstName: "Daniel", lastName: "Saint", Dob: "19 Jan 1970" };
+           let { firstName:f, lastName:l, Dob:d} = details;
+        
+           function getdetails(f,l,d) 
+           {
+               document.write("<br>My Name is "+ f + " " + l);
+               document.write("<br>My DOB is "+ d);
+           }
+
+           getdetails();
+           
+        </script>
+    </body>
+</html>       
